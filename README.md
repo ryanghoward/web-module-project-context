@@ -17,8 +17,9 @@ In this project you'll take take an almost completed e-commerce store and refact
 ### Instructions
 
 ### Task 1: Project Set up
-- [ ] Download project dependencies by running `npm install`.
-- [ ] Start up the app using `npm start`.
+
+- [x] Download project dependencies by running `npm install`.
+- [x] Start up the app using `npm start`.
 
 ### Task 2: MVP
 
@@ -28,7 +29,7 @@ Before you get started, please take a few minutes and get acquainted with this a
 
 - You'll also notice inside of our `App.js` we have 3 components. A navigation component and two route based components. Each of those components are all being passed either our `cart` state or `product` state as props, when we start to scale our application and add more props our codebase is going to start to become very cumbersome and will make our application hard to work with.
 
-- To combat this from happening we're going to refactor our application to use `Context API`, making it easier and more effiecent to access data across our application.
+- To combat this from happening we're going to refactor our application to use `Context API`, making it easier and more efficient to access data across our application.
 
 **Step 1 - Add item functionality**
 
@@ -61,7 +62,7 @@ Before you get started, please take a few minutes and get acquainted with this a
 **Before**
 
 ```js
-<Route exact path="/">
+<Route exact path='/'>
   <Products products={products} addItem={addItem} />
 </Route>
 ```
@@ -69,7 +70,7 @@ Before you get started, please take a few minutes and get acquainted with this a
 **After**
 
 ```js
-<Route exact path="/">
+<Route exact path='/'>
   <Products />
 </Route>
 ```
@@ -157,6 +158,7 @@ Do not attempt stretch problems until MVP has been reached and a final commit ha
 - Persist Cart Items using `localStorage`. (If you try this one, it will be a bit tricky to get our items to populate the shopping cart on a refresh. You'll have to think about where the data actually lives, and how you can get data there from localStorage when the app is being mounted after a refresh. Good luck!)
 
 ### Submission Format
+
 - [ ] If this is your first time connecting a submission, authorize your github account within the codegrade assignment.
 - [ ] Connect your fork to Codegrade using the "Connect Git" button.
 - [ ] Find your newly created fork from the list and push your work to main.
